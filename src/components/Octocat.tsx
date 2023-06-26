@@ -1,21 +1,23 @@
 import React from 'react'
 
-export function OctocatComponent(props) {
+type OctocatComponentProps = {}
+
+export function OctocatComponent(props: OctocatComponentProps) {
   return (
     <article>
-      <a href={link}>
-        <img src={image} width="400" height="400" />
+      <a href={props.link}>
+        <img src={props.image} width="400" height="400" />
       </a>
       <ul>
         <li>
-          {number}
-          <a href={link}>
-            <strong>{name}</strong>
+          {props.number}
+          <a href={props.link}>
+            <strong>{props.name}</strong>
           </a>
         </li>
         <li>
-          <a href={authorLink}>
-            <img src={authorImage} width="24px" height="24px" alt="cat" />
+          <a href={props.authorLink}>
+            <img src={props.authorImage} width="24px" height="24px" alt="cat" />
           </a>
         </li>
       </ul>
