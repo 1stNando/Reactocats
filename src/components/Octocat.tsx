@@ -1,6 +1,13 @@
 import React from 'react'
 
-type OctocatComponentProps = {}
+type OctocatComponentProps = {
+  number: number
+  name: string
+  image: string
+  link: string
+  authorLink: string
+  authorImage: string
+}
 
 export function OctocatComponent(props: OctocatComponentProps) {
   return (
