@@ -1,6 +1,9 @@
 import React from 'react'
+import { OctocatComponent } from './components/Octocat'
+import './index.scss'
 
 export function App() {
+  ///////////////
   return (
     <div>
       <header>
@@ -38,6 +41,7 @@ export function App() {
           </nav>
         </div>
       </header>
+
       <main className="flex-wrap">
         <div>
           <div>
@@ -49,6 +53,7 @@ export function App() {
                 alt="Terracottocat"
               />
             </a>
+
             <ul>
               <li>
                 #149:
@@ -78,6 +83,7 @@ export function App() {
                 alt="Octogatos"
               />
             </a>
+
             <ul>
               <li>
                 #148:
@@ -107,6 +113,7 @@ export function App() {
                 alt="Sentrytocat"
               />
             </a>
+
             <ul>
               <li>
                 #143:

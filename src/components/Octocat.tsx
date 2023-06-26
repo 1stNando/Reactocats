@@ -9,6 +9,7 @@ type OctocatComponentProps = {
   authorImage: string
 }
 
+// This defines a default structure
 export function OctocatComponent(props: OctocatComponentProps) {
   return (
     <article>
