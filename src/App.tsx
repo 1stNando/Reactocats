@@ -1,6 +1,7 @@
 import React from 'react'
 import { OctocatComponent } from './components/Octocat'
 import './index.scss'
+import octocats from './octocats.json'
 
 export function App() {
   ///////////////
@@ -42,7 +43,7 @@ export function App() {
         </div>
       </header>
 
-      <main className="flex-wrap">
+      {/* <main className="flex-wrap">
         <div>
           <div>
             <a href="https://octodex.github.com//terracottocat/">
@@ -287,7 +288,20 @@ export function App() {
             </ul>
           </div>
         </div>
-      </main>
+      </main> */}
+
+      {octocats.map((octocat) => (
+        <OctocatComponent
+          key={octocat.number}
+          number={octocat.number}
+          name={octocat.name}
+          image={octocat.image}
+          link={octocat.link}
+          authorLink={octocat.authors[0].link}
+          authorImage={octocat.authors[0].image}
+        />
+      ))}
+
       <footer>
         <div>
           <p>© 2013 – 2020 GitHub, Inc. All rights reserved.</p>
