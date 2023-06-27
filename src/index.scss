@@ -27,6 +27,8 @@ body {
 a:visited {
   color: black;
 }
+
+// This styles the bottom bar that contains the author's information.
 li {
   list-style-type: none;
 }
@@ -42,6 +44,8 @@ header {
   line-height: 21px;
   z-index: auto;
 }
+
+// This styles the top container representing the header.
 .container1 {
   padding-left: 24px;
   padding-right: 24px;
@@ -49,7 +53,7 @@ header {
   height: 64px;
 }
 .flex-wrap {
-  display: grid !important;
+  display: flex;
 
   grid-gap: 2vw;
 }
@@ -57,6 +61,7 @@ header {
 .flex-wrap > div {
   display: flex;
   flex-wrap: wrap;
+
   grid-template-rows: auto auto auto auto;
   grid-template-columns: auto auto auto auto;
   font-size: 2vw;
